@@ -3,4 +3,4 @@
 - Deployment folder is used for deploying different software.
 - Probe folder stores the effective probes we have obtained.
 - ResponseProcessing folder contains the code for the response processing module.
-- The VersionIdentification folder stores scripts for dynamically identifying versions.
+- VersionIdentification folder stores scripts for dynamically identifying versions.
