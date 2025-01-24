@@ -1,0 +1,38 @@
+networks:
+  joomla_network: {}
+services:
+  db:
+    environment:
+      MYSQL_DATABASE: joomla_db
+      MYSQL_PASSWORD: a
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_USER: joomla
+    image: mysql:8.0
+    networks:
+    - joomla_network
+    restart: always
+    volumes:
+    - db_data:/var/lib/mysql
+  joomla:
+    environment:
+      JOOMLA_ADMIN_EMAIL: joomla@example.com
+      JOOMLA_ADMIN_PASSWORD: joomla@secured
+      JOOMLA_ADMIN_USER: Joomla Hero
+      JOOMLA_ADMIN_USERNAME: joomla
+      JOOMLA_DB_HOST: db
+      JOOMLA_DB_NAME: joomla_db
+      JOOMLA_DB_PASSWORD: a
+      JOOMLA_DB_USER: joomla
+      JOOMLA_SITE_NAME: Joomla
+    image: joomla:3.9.21
+    networks:
+    - joomla_network
+    ports:
+    - 8081:80
+    restart: always
+    volumes:
+    - joomla_data:/var/www/html
+version: '3.8'
+volumes:
+  db_data: {}
+  joomla_data: {}

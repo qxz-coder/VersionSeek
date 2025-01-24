@@ -1,0 +1,21 @@
+{
+    "index_0": "curl -k -X GET http://localhost:8081/category-view/?format=feed",
+    "index_1": "curl -k -X GET http://localhost:8081/api/index.php/v1/config/application?public=true",
+    "index_2": "curl -k -X GET http://localhost:8081/templates/system/css/system.css",
+    "index_3": "curl -k -X GET http://localhost:8081/templates/system/css/system.css",
+    "index_4": "curl -k -X GET http://localhost:8081/media/templates/site/cassiopeia/css/global/colors_standard.min.css",
+    "index_5": "curl -k -X GET http://localhost:8081/language/en-GB/en-GB.com_media.ini",
+    "index_6": "curl -k -X PATCH -H \"Content-Type: application/json\" http://localhost:8081/api/index.php/v1/config/application -d '{\"sef_trailing_slash\": \"add\", \"sef_enforce_trailing_slash\": \"1\"}'",
+    "index_7": "curl -k -X GET http://localhost:8081/language/en-GB/en-GB.ini",
+    "index_8": "curl -k -X GET http://localhost:8081/language/en-GB/en-GB.xml",
+    "index_9": "curl -k -X GET http://localhost:8081/htaccess.txt",
+    "index_10": "curl -k -X GET http://localhost:8081/media/system/js/validate.js",
+    "index_11": "curl -k -X GET http://localhost:8081/api/index.php/v1/content/categories?view=archive",
+    "index_12": "curl -k -X GET http://localhost:8081/media/system/js/mootools-more.js",
+    "index_13": "curl -k -X GET http://localhost:8081/language/en-GB/en-GB.com_media.ini",
+    "index_14": "curl -k -X GET http://localhost:8081/README.txt",
+    "index_15": "curl -k -X GET http://localhost:8081/administrator/manifests/files/joomla.xml",
+    "index_16": "curl -k -X GET http://localhost:8081/media/system/js/core-uncompressed.js",
+    "index_17": "curl -k -X GET http://localhost:8081/category-blog-page?format=feed&type=atom",
+    "index_18": "curl -k -X GET http://localhost:8081/api/index.php/v1/articles/upmerge/2023-10-26"
+}
