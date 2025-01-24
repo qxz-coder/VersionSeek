@@ -65,7 +65,7 @@ if [ ! -f "Dubbo_docker" ]; then
 fi
 
 cat "Dubbo_docker" > "${dockerDir}/Dockerfile"
-sed -i "s/10.177.35.94/${zookeeperIp}/g" "${dockerDir}/Dockerfile"
+sed -i "s/xx.xx.xx.xx/${zookeeperIp}/g" "${dockerDir}/Dockerfile"
 sed -i "s/3.0.0/${versionNumber}/g" "${dockerDir}/Dockerfile"
 
 

@@ -212,7 +212,6 @@ def en_workflow(reworkList=None, case_fp = 'test_case_complate.json',save_fp = '
 
     end_time = time.time()
     len_version = len(case_lists)
-    print(f'平均每个版本的运行时间为{(end_time-start_time)/len_version}秒')
     
     
 

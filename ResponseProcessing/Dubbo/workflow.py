@@ -219,7 +219,6 @@ def newly_workflow(deploy_flag = False):
     print('all_split_data:',all_split_data)
     
     # min_probes.extend(not_split_all_probes)
-    # 不允许使用index 17
     
     min_probes = local_optima(all_split_data,probe_data)
     

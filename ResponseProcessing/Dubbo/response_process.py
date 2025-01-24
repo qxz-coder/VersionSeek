@@ -3,7 +3,6 @@ import os,re,json
 from difflib import SequenceMatcher
 
 
-# 模糊文本
 def mask_text(fileContent: str):
     '''Mask processing based on regular matching
     

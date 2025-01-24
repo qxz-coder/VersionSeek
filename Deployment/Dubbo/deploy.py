@@ -1,7 +1,6 @@
 
 
 from deploy_command import (
-    process_dubbo_commands,
     telnet_dubbo_multiple_commands,
     deploy_2_5_x,
     deploy,
@@ -35,7 +34,7 @@ def generate_modify_dockerfile_templates(workdir:str, version:str, security_flag
     with open(plain_dockerfile,'r') as f:
         plain_content = f.read()
     if security_flag is None:
-        pass    # 不做任何修改
+        pass    
     elif security_flag == 'enabled':
         end_pattern = re.compile(r',\s*"exec:java"\]')
         matches = end_pattern.findall(plain_content)
@@ -54,7 +53,7 @@ def generate_modify_dockerfile_templates(workdir:str, version:str, security_flag
 
 @func_set_timeout(600)
 def safe_deploy(version, zookeeper_ip, work_dir, port = '20880',security_flag:str=None):
-    # 判断version
+    
     
     generate_modify_dockerfile_templates(work_dir, version, security_flag)
     
